@@ -31,7 +31,7 @@ public class Abonament {
     public void setPret() {
         String[] tipuri={"Free","Standard","Premium"};
         float[] preturi={0,20,50};
-        for(int i=0;i<=3;i++){
+        for(int i=0;i<=2;i++){
             if(tip==tipuri[i])
                 this.pret = preturi[i];
         }
@@ -46,3 +46,5 @@ public class Abonament {
         this.data_inceput = data_inceput;
     }
 }
+
+//urmeaza ca setPret sa fie inlocuita cu o colectie de tip map
