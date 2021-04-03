@@ -2,6 +2,6 @@ package Models;
 
 public interface UtilizatorService {
 
-    Utilizator[] getUtilizatorOrdonatDupaNume();
+    void getUtilizatorOrdonatDupaNume(Utilizator[] utilizatori);
 
 }

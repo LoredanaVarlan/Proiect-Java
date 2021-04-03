@@ -30,6 +30,15 @@ public class Utilizator extends Persoana{
         this.parola = parola;
     }
 
+    public Utilizator(String nume, String prenume, String email, String username, String parola ){
+        this.nume=nume;
+        this.prenume=prenume;
+        this.email=email;
+        this.username=username;
+        this.parola=parola;
+        this.data_creare=LocalDate.now();
+
+    }
 
     public void setUtilizator(String nume, String prenume, String email, String username, String parola ){
         this.nume=nume;
@@ -40,6 +49,7 @@ public class Utilizator extends Persoana{
         this.data_creare=LocalDate.now();
 
     }
+
 
     public void setAbonament(String tip, float pret){
         Abonament newAbonament = new Abonament(tip, pret,LocalDate.now());
@@ -81,6 +91,14 @@ public class Utilizator extends Persoana{
         else{System.out.println("Ultima carte imprumutata a fost deja returnata.");}
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
+
+    public int compareTo(Utilizator o) {
+        return o.nume.compareTo(this.nume);
+    }
 
 }
