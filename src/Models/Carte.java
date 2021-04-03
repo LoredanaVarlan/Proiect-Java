@@ -1,11 +1,22 @@
 package Models;
 
+import java.time.LocalDate;
+
 public class Carte {
+    String denumire;
     Editura editura;
     Librarie librarie;
     Autor autor;
     String gen;
-    Data data_publicare;
+    LocalDate data_publicare;
+
+    public String getDenumire() {
+        return denumire;
+    }
+
+    public void setDenumire(String denumire) {
+        this.denumire = denumire;
+    }
 
     public Editura getEditura() {
         return editura;
@@ -39,11 +50,12 @@ public class Carte {
         this.gen = gen;
     }
 
-    public Data getData_publicare() {
-        return data_publicare;
+
+    public void setCarte(String denumire, Autor autor, String gen) {
+        this.denumire=denumire;
+        this.autor = autor;
+        this.gen=gen;
+
     }
 
-    public void setData_publicare(Data data_publicare) {
-        this.data_publicare = data_publicare;
-    }
 }

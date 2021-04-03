@@ -59,7 +59,27 @@ public class Utilizator extends Persoana{
         System.out.println(abonament[abonament.length-1].getPret());
         System.out.println(abonament[abonament.length-1].getdata_inceput());
     }
+    public void getImprumutactual(){
+        if(imprumut[imprumut.length-1].returnat==false){
+        System.out.println(imprumut[imprumut.length-1].carte.denumire);
+        System.out.println(imprumut[imprumut.length-1].carte.autor.nume);
+        System.out.println(imprumut[imprumut.length-1].carte.autor.prenume);
+        System.out.println(imprumut[imprumut.length-1].carte.gen);
+        System.out.println(imprumut[imprumut.length-1].data_imprumut);
+        System.out.println(imprumut[imprumut.length-1].termen_limita);
+        }
+        else {
+            System.out.println("Persoana aceasta nu imprumuta in momentul de fata o carte.");
+        }
+    }
 
+    public void Returnare(){
+        if(imprumut[imprumut.length-1].returnat==false){
+            imprumut[imprumut.length-1].returnat=true;
+            System.out.println("Cartea a fost marcata ca returnata cu succes.");
+        }
+        else{System.out.println("Ultima carte imprumutata a fost deja returnata.");}
+    }
 
 
 
