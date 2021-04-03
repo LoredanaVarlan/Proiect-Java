@@ -2,18 +2,10 @@ package Models;
 
 public class Imprumut {
 
-   Utilizator utilizator;
    Carte carte;
    Data data_imprumut;
    Data termen_limita;
 
-   public Utilizator getUtilizator() {
-      return utilizator;
-   }
-
-   public void setUtilizator(Utilizator utilizator) {
-      this.utilizator = utilizator;
-   }
 
    public Carte getCarte() {
       return carte;
@@ -37,5 +29,9 @@ public class Imprumut {
 
    public void setTermen_limita(Data termen_limita) {
       this.termen_limita = termen_limita;
+   }
+
+   public Imprumut(Carte carte) {
+      this.carte=carte;
    }
 }

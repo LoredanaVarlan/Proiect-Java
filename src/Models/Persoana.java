@@ -1,12 +1,14 @@
 package Models;
 
+import java.time.LocalDate;
+
 public class Persoana {
 
     protected String nume;
     protected String prenume;
     protected String email;
     protected String CNP;
-    protected Data data_nasterii;
+    protected LocalDate data_nasterii;
     protected boolean Sex;
 
     public String getNume() {
@@ -41,14 +43,6 @@ public class Persoana {
         this.CNP = CNP;
     }
 
-    public Data getData_nasterii() {
-        return data_nasterii;
-    }
-
-    public void setData_nasterii(Data data_nasterii) {
-        this.data_nasterii = data_nasterii;
-    }
-
     public boolean isSex() {
         return Sex;
     }
@@ -56,4 +50,6 @@ public class Persoana {
     public void setSex(boolean sex) {
         Sex = sex;
     }
+
+
 }

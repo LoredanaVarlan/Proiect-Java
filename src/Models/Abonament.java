@@ -1,19 +1,15 @@
 package Models;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Abonament {
 
-    private Utilizator utilizator;
     private String tip;
     private float pret;
-    private Data data_inceput;
+    private LocalDate data_inceput;
 
-    public Utilizator getUtilizator() {
-        return utilizator;
-    }
 
-    public void setUtilizator(Utilizator utilizator) {
-        this.utilizator = utilizator;
-    }
 
     public String getTip() {
         return tip;
@@ -38,12 +34,15 @@ public class Abonament {
 
     }
 
-    public Data getData_inceput() {
+
+    public LocalDate getdata_inceput() {
         return data_inceput;
     }
 
-    public void setData_inceput(Data data_inceput) {
-        this.data_inceput = data_inceput;
+    public Abonament(String tip, float pret, LocalDate data_inceput) {
+        this.tip = tip;
+        this.pret = pret;
+        this.data_inceput = LocalDate.now();
     }
 }
 
