@@ -15,11 +15,13 @@ public class Main {
 
 
         //Ordonarea utilizatorilor dupa nume
+        System.out.println("///////////////////////////////");
         utilizator[1]= new Utilizator("Grecu","Adela","grecuadela@yahoo.com","grecuadela","1234");
         UtilizatorService service = new UtilizatorImpl();
         service.getUtilizatorOrdonatDupaNume(utilizator);
 
         //Imprumutarea unei noi carti
+        System.out.println("///////////////////////////////");
         Autor Jane = new Autor();
         Jane.setAutor("Austen","Jane"); //cream autor
         Carte C1 = new Carte();
