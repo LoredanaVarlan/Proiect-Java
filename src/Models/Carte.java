@@ -9,6 +9,7 @@ public class Carte {
     Autor autor;
     String gen;
     LocalDate data_publicare;
+    int nr_bucati;
 
     public String getDenumire() {
         return denumire;
@@ -51,10 +52,11 @@ public class Carte {
     }
 
 
-    public void setCarte(String denumire, Autor autor, String gen) {
+    public Carte(String denumire, Autor autor, String gen, int nr_bucati) {
         this.denumire=denumire;
         this.autor = autor;
         this.gen=gen;
+        this.nr_bucati=nr_bucati;
 
     }
 

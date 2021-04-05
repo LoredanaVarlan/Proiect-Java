@@ -14,7 +14,7 @@ public class Autor extends Persoana{
         this.data_deces = data_deces;
     }
 
-    public void setAutor(String nume, String prenume){
+    public Autor(String nume, String prenume){
         this.nume=nume;
         this.prenume=prenume;
 
