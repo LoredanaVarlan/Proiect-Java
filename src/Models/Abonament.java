@@ -81,4 +81,3 @@ public class Abonament {
     }
 }
 
-//urmeaza ca setPret sa fie inlocuita cu o colectie de tip map
