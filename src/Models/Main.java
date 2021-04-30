@@ -2,11 +2,18 @@ package Models;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        List<Carte> carti = CSVReader.citesteCartiCSV("carti.csv");
+        //for (Carte b : carti) { System.out.println(b); }
+
+
+
+        /*
         //1.Afisarea datelor ultimului abonament facut
         Utilizator[] utilizator = new Utilizator[2];
         utilizator[0] = new Utilizator("Ursu", "Ana", "ursuana@yahoo.com", "ursuana", "56789");
@@ -74,7 +81,7 @@ public class Main {
         carti[1]=new Carte("Contele de Monte-Cristo", autori[1], "Drama", 2);
         for(int i=0;i<carti.length;i++){
             System.out.println(carti[i].denumire+": "+carti[i].nr_bucati);
-        }
+        }*/
 
     }
 }

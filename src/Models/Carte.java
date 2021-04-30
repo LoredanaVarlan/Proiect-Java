@@ -51,12 +51,30 @@ public class Carte {
         this.gen = gen;
     }
 
+    public LocalDate getData_publicare() {
+        return data_publicare;
+    }
+
+    public void setData_publicare(LocalDate data_publicare) {
+        this.data_publicare = data_publicare;
+    }
+
+    public int getNr_bucati() {
+        return nr_bucati;
+    }
+
+    public void setNr_bucati(int nr_bucati) {
+        this.nr_bucati = nr_bucati;
+    }
 
     public Carte(String denumire, Autor autor, String gen, int nr_bucati) {
         this.denumire=denumire;
         this.autor = autor;
         this.gen=gen;
         this.nr_bucati=nr_bucati;
+
+    }
+    public Carte(){
 
     }
 
